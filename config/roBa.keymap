@@ -86,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp ESC           &kp W         &kp E         &kp R                   &kp T                                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&lt 4 A           &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))                      &kp MINUS         &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp LEFT_GUI                       &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 2 INT_HENKAN  &lt 3 ENTER                             &kp DEL
+&kp ESC           &kp W           &kp E         &kp R                   &kp T                                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&lt 4 A           &kp S           &kp D         &kp F                   &kp G        &kp LS(LG(S))                      &kp MINUS         &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V                   &kp B        &mt LEFT_GUI TAB                   &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &lt 1 LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 2 INT_HENKAN  &lt 3 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -97,19 +97,19 @@
 
         FUNCTION {
             bindings = <
-&trans    &trans  &kp END  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&kp HOME  &trans  &trans   &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans    &trans  &trans   &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans    &trans  &trans   &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans    &trans  &kp END  &trans  &trans                      &trans  &kp F7  &kp F8  &kp F9  &kp F10
+&kp HOME  &trans  &trans   &trans  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans    &trans  &trans   &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans    &trans  &trans   &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp N7  &kp N8  &kp N9  &kp PLUS                                           &kp N7  &kp N7  &kp N8  &kp N9  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &kp N4  &kp N4  &kp N5  &kp N6  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp EQUAL                    &trans  &kp N1  &kp N1  &kp N2  &kp N3  &kp BACKSLASH
-&trans                      &trans  &trans  &trans  &trans        &trans                       &trans  &trans                          &kp PIPE
+&kp MINUS                   &kp N7  &kp N8  &kp N9  &kp PLUS                                           &trans  &kp N7  &kp N8  &kp N9  &trans
+&kp SLASH                   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp EQUAL                    &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N0
+&trans                      &trans  &kp N0  &trans  &trans        &trans                       &trans  &trans                          &trans
             >;
         };
 
@@ -126,10 +126,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &kp END      &kp F5         &trans                            &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
-&none   &trans  &kp DEL      &kp RIGHT      &trans     &trans      &trans     &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &trans
-&trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &trans      &kp TILDE  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
-&trans  &trans  &trans       &trans         &kp SPACE  &trans      &trans     &kp F2                                                        &kp PRINTSCREEN
+&trans  &trans    &kp END      &kp F5         &trans                            &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
+&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &trans     &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &trans
+&trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &trans      &kp TILDE  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
+&trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans     &kp F2                                                        &kp PRINTSCREEN
             >;
         };
 
