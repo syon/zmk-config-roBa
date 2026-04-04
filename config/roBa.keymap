@@ -10,6 +10,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -80,10 +81,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 3 BSPC     &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))                      &kp MINUS                   &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp LEFT_GUI                       &kp SEMICOLON               &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 4 INT_KATAKANAHIRAGANA  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -120,10 +121,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans    &trans  &kp END      &kp F5         &trans                            &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
+&kp HOME  &trans  &kp DEL      &kp RIGHT      &trans     &trans      &trans     &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &trans
+&trans    &trans  &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &trans      &kp TILDE  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
+&trans    &trans  &trans       &trans         &kp SPACE  &trans      &trans     &kp F2                                                        &kp PRINTSCREEN
             >;
         };
 
