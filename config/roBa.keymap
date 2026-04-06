@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp ESC           &kp W           &kp E         &kp R      &kp T                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&lt 4 A           &kp S           &kp D         &kp F      &kp G        &kp LS(LG(S))         &kp K_APP         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V      &kp B        &mt LEFT_GUI TAB      &kp LEFT_ALT      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
-&kp LCTRL         &lt 1 LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &lt 2 SPACE  &kp INT_MUHENKAN      &lt 2 INT_HENKAN  &lt 3 ENTER                             &kp RIGHT_CONTROL
+&kp ESC           &kp W           &kp E         &kp R           &kp T                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&lt 4 A           &kp S           &kp D         &kp F           &kp G        &kp LS(LG(S))         &kp K_APP         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V           &kp B        &mt LEFT_GUI TAB      &kp LEFT_ALT      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&kp LCTRL         &lt 1 LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT5  &lt 2 SPACE  &kp INT_MUHENKAN      &lt 2 INT_HENKAN  &lt 3 ENTER                             &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -121,7 +121,7 @@
         MOUSE {
             bindings = <
 &trans  &trans    &kp END      &kp F5         &trans                            &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
-&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &trans     &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &trans
+&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &trans     &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &none
 &trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &none       &kp TILDE  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
 &trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans     &kp F2                                                        &kp PRINTSCREEN
             >;
