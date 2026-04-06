@@ -118,7 +118,7 @@
             bindings = <
 &trans  &trans    &kp END      &kp F5         &trans                            &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
 &none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &trans     &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &trans
-&trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &trans      &kp TILDE  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
+&trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &none       &kp TILDE  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
 &trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans     &kp F2                                                        &kp PRINTSCREEN
             >;
         };
