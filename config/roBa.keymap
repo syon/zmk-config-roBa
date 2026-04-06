@@ -39,11 +39,13 @@
         double_quotation {
             bindings = <&kp LS(N2)>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         Qw {
             bindings = <&kp Q>;
             key-positions = <0 1>;
+            layers = <0>;
         };
     };
 
