@@ -33,9 +33,7 @@
     // };
 };
 
-&msc_input_listener {
-    input-processors = <&zip_scroll_scaler 1 8>;
-};
+&msc_input_listener { input-processors = <&zip_scroll_scaler 1 8>; };
 
 / {
     combos {
@@ -127,10 +125,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans    &kp END      &kp F5         &trans                                 &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
-&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &msc MOVE_Y(1)    &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &none
-&trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &none       &msc MOVE_Y(-1)  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
-&trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans          &kp F2                                                        &kp PRINTSCREEN
+&trans  &trans    &kp END      &kp F5         &trans                                   &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
+&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &msc MOVE_Y(10)   &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &none
+&trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &none       &msc MOVE_Y(-10)  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
+&trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans            &kp F2                                                        &kp PRINTSCREEN
             >;
         };
 
