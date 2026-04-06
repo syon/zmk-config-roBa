@@ -32,29 +32,9 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp LS(N2)>;
             key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
 
         Qw {
@@ -86,6 +66,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -101,7 +82,7 @@
 &kp LCTRL         &lt 1 LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &lt 2 SPACE  &kp INT_MUHENKAN      &lt 2 INT_HENKAN  &lt 3 ENTER                             &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
