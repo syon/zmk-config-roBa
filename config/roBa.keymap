@@ -60,13 +60,13 @@
         wheel_up: wheel_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &msc SCRL_UP>;
+            bindings = <&macro_tap>, <&msc SCRL_UP>;
         };
-    
+
         wheel_dn: wheel_dn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &msc SCRL_DOWN>;
+            bindings = <&macro_tap>, <&msc SCRL_DOWN>;
         };
     };
 
@@ -84,6 +84,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&wheel_dn>, <&wheel_up>;
+
             tap-ms = <5>;
         };
     };
@@ -127,16 +128,14 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans       &trans    &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                        &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans    &kp END      &kp F5         &trans                                   &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
-&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &wheel_up   &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &none
+&trans  &trans    &kp END      &kp F5         &trans                            &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
+&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &wheel_up  &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &none
 &trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &none       &wheel_dn  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
-&trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans            &kp F2                                                        &kp PRINTSCREEN
+&trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans     &kp F2                                                        &kp PRINTSCREEN
             >;
         };
 
