@@ -14,11 +14,6 @@
     // tapping-term-ms = <135>;  // default: 200
 };
 
-&msc {
-    acceleration-exponent = <0>;
-    time-to-max-speed-ms = <0>;
-};
-
 &trackball {
     // automouse-layer = <4>;
 
