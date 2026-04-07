@@ -14,6 +14,11 @@
     // tapping-term-ms = <135>;  // default: 200
 };
 
+&msc {
+    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <0>;
+};
+
 &trackball {
     // automouse-layer = <4>;
 
@@ -83,8 +88,8 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&wheel_dn>, <&wheel_up>;
-            tap-ms = <20>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <5>;
         };
     };
 
