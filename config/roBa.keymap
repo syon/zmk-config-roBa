@@ -14,11 +14,6 @@
     // tapping-term-ms = <135>;  // default: 200
 };
 
-&msc {
-    acceleration-exponent = <0>;
-    time-to-max-speed-ms = <10>;
-};
-
 &trackball {
     // automouse-layer = <4>;
 
@@ -60,6 +55,18 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        wheel_up: wheel_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &msc SCRL_UP>;
+        };
+    
+        wheel_dn: wheel_dn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &msc SCRL_DOWN>;
         };
     };
 
@@ -127,8 +134,8 @@
         MOUSE {
             bindings = <
 &trans  &trans    &kp END      &kp F5         &trans                                   &trans         &trans     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp UP
-&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &msc SCRL_UP   &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &none
-&trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &none       &msc SCRL_DOWN  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
+&none   &kp HOME  &kp DEL      &kp RIGHT      &trans     &trans      &wheel_up   &kp BACKSPACE  &mkp MB1   &mkp MB3         &mkp MB2           &none
+&trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp LEFT   &none       &wheel_dn  &kp DOWN       &kp ENTER  &kp LC(HOME)     &kp LC(END)        &trans
 &trans  &trans    &trans       &trans         &kp SPACE  &trans      &trans            &kp F2                                                        &kp PRINTSCREEN
             >;
         };
